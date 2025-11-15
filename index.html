@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài Tập CRUD DOM: Quản Lý Sản Phẩm</title>
+  </head>
+  <body>
+    <hr />
+
+    <h1>Bài Tập CRUD DOM: Quản Lý Sản Phẩm</h1>
+
+    <div id="product-form-area">
+      <h2>Thêm Sản phẩm Mới</h2>
+      <input type="text" id="product-name-input" placeholder="Tên Sản phẩm" />
+      <input type="number" id="product-price-input" placeholder="Giá (VNĐ)" />
+
+      <input type="hidden" id="product-id-to-edit" value="" />
+
+      <button id="add-product-btn">Thêm Sản phẩm</button>
+      <button id="update-product-btn" style="display: none">
+        Lưu Thay đổi
+      </button>
+    </div>
+
+    <div id="product-list-area">
+      <h2>Danh sách Sản phẩm</h2>
+      <table
+        id="product-table"
+        border="1"
+        style="width: 100%; text-align: left"
+      >
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Tên Sản phẩm</th>
+            <th>Giá</th>
+            <th>Thao tác</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-id="1">
+            <td>1</td>
+            <td class="product-name">Bàn phím cơ</td>
+            <td class="product-price">1.200.000</td>
+            <td>
+              <button class="edit-btn">Sửa</button>
+              <button class="delete-btn">Xóa</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="saz.js"></script>
+  </body>
+</html>

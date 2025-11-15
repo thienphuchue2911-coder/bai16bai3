@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài Tập CRUD DOM</title>
+</head>
+
+<body style="font-family: Arial, sans-serif; background: #f2f3f7;">
+    <div style="max-width: 900px; margin: 0 auto; padding-top: 20px;">
+
+        <h1 style="text-align: center; font-size: 28px; color: #6b8796; margin-bottom: 20px;">
+            Bài Tập CRUD DOM: Quản Lý Sản Phẩm
+        </h1>
+        <div style="
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+            margin-bottom: 25px;
+        ">
+            <h2 style="margin-bottom: 15px; color: #567b8a;">Thêm Sản phẩm Mới</h2>
+
+            <input id="product-name" type="text" placeholder="Tên Sản phẩm" 
+                   style="width: 100%; padding: 10px; margin-bottom: 12px; border: 1px solid #ccc; border-radius: 6px;" />
+
+            <input id="product-price" type="number" placeholder="Giá (VNĐ)" 
+                   style="width: 100%; padding: 10px; margin-bottom: 12px; border: 1px solid #ccc; border-radius: 6px;" />
+
+            <button id="add-btn"
+                style="background: #7da4b5; color: white; padding: 10px 18px; border: none; border-radius: 6px; cursor: pointer;">
+                Thêm Sản phẩm
+            </button>
+        </div>
+        <div style="
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+        ">
+            <h2 style="margin-bottom: 15px; color: #567b8a;">Danh sách Sản phẩm</h2>
+
+            <table style="width: 100%; border-collapse: collapse;">
+                <thead>
+                    <tr style="background: #8aaeba; color: white;">
+                        <th style="padding: 12px; text-align: left;">ID</th>
+                        <th style="padding: 12px; text-align: left;">Tên Sản phẩm</th>
+                        <th style="padding: 12px; text-align: left;">Giá</th>
+                        <th style="padding: 12px; text-align: left;">Thao tác</th>
+                    </tr>
+                </thead>
+
+                <tbody id="product-list"></tbody>
+            </table>
+        </div>
+
+    </div>
+    <script src="code.js"></script>
+</body>
+</html>
